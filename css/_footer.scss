@@ -1,0 +1,43 @@
+.sns-text {
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+.sns-icon {
+  display: flex;
+  justify-content: space-around;
+  img {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.contact {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.contact-text {
+  margin-bottom: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  a {
+    margin-bottom: 1rem;
+  }
+}
+
+.copy-right {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+}
+
+.copy-text {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: $black;
+  @include f_around(10, 27.5, 400, 0);
+}
