@@ -1,0 +1,22 @@
+.swiper {
+  margin-top: 3rem;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.swiper-slide {
+  width: auto;
+  text-align: center;
+  p {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: $black;
+    @include f_around(24, 27.5, 700, 0);
+  }
+  img {
+    margin-left: 3rem;
+  }
+}
