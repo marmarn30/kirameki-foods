@@ -6,6 +6,11 @@
   width: 100%;
   height: 7rem;
   background-color: $white;
+  @media #{$large} {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 15rem;
+  }
 }
 
 .header-container {
@@ -82,4 +87,15 @@
   position: fixed;
   opacity: 0.8;
   cursor: pointer;
+}
+
+// PC表示
+.pc-nav-list {
+  display: flex;
+  justify-content: space-around;
+  & a {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: $black;
+    @include f_around(20, 27.2, 400, 0);
+  }
 }
