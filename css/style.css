@@ -1,0 +1,880 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap");
+.container {
+  width: 92%;
+  max-width: 345px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 83%;
+    max-width: 1145px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .sp-only {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .pc-only {
+    display: none;
+  }
+}
+
+.animated {
+  opacity: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.section-title {
+  margin-left: 1.5rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #032533;
+  font-size: 2.8rem;
+  font-weight: 900;
+  line-height: 0.71464;
+  letter-spacing: 0em;
+}
+
+.xl-text {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #524e4d;
+  font-size: 2.004rem;
+  font-weight: 400;
+  line-height: 1.37525;
+  letter-spacing: 0em;
+}
+
+.lg-text {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #524e4d;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.71875;
+  letter-spacing: 0em;
+}
+
+.sm-text {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #524e4d;
+  font-size: 1.233rem;
+  font-weight: 400;
+  line-height: 1.75101;
+  letter-spacing: 0em;
+}
+
+/*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  /* 1 */
+  -moz-appearance: none;
+       appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  /* 2 */
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+[type="checkbox"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+       appearance: checkbox;
+}
+
+[type="radio"] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+       appearance: radio;
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type="button"]:disabled,
+[type="reset"]:disabled,
+[type="submit"]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+[type="search"] {
+  outline-offset: -2px;
+  /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+table {
+  border-color: inherit;
+  /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+.swiper {
+  margin-top: 3rem;
+}
+
+.swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+          transition-timing-function: linear !important;
+}
+
+.swiper-slide {
+  width: auto;
+  text-align: center;
+}
+
+.swiper-slide p {
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #524e4d;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.14583;
+  letter-spacing: 0em;
+}
+
+.swiper-slide img {
+  margin-left: 3rem;
+}
+
+#company h2 {
+  margin-top: 3rem;
+  margin-bottom: 7rem;
+}
+
+#cover {
+  display: none;
+  margin-top: 7rem;
+}
+
+.cover-img {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-image: url("../img/cover_1_sp.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.cover-title {
+  position: absolute;
+  top: 81px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #ffefef;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  font-size: 2.6rem;
+  font-weight: 900;
+  letter-spacing: 0.0455em;
+}
+
+.cover-title span {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.sns-text {
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+.sns-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.sns-icon img {
+  width: 64px;
+  height: 64px;
+}
+
+.contact {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.contact-text {
+  margin-bottom: 2rem;
+}
+
+.contact-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-item a {
+  margin-bottom: 1rem;
+}
+
+.copy-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 5rem;
+}
+
+.copy-text {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #524e4d;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2.75;
+  letter-spacing: 0em;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 7rem;
+  background-color: #ffffff;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  left: 1.6rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 3rem;
+  color: #524e4d;
+}
+
+.logo {
+  margin: 0 auto;
+}
+
+.sp-nav {
+  display: none;
+  position: absolute;
+  width: 75%;
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 200;
+}
+
+.sp-nav-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 7rem;
+  padding-left: 1.6rem;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.sp-nav-list li {
+  height: 6rem;
+  line-height: 6rem;
+  padding-left: 1.6rem;
+  font-size: 2rem;
+  color: #524e4d;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.sp-nav-list li a {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.close {
+  position: absolute;
+  right: 2rem;
+  font-size: 3rem;
+  color: #524e4d;
+}
+
+#news {
+  margin-top: 8rem;
+}
+
+.news-container {
+  margin-top: 2rem;
+}
+
+.news-1 {
+  width: 100%;
+}
+
+.news-1 p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.news-2, .news-3, .news-4, .news-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+}
+
+.news-2 img, .news-3 img, .news-4 img, .news-5 img {
+  width: 159px;
+}
+
+.news-2 p, .news-3 p, .news-4 p, .news-5 p {
+  padding-left: 2.8rem;
+}
+
+.news-5 {
+  margin-bottom: 8rem;
+}
+
+#notice {
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  background-color: #f7f7f7;
+}
+
+.notice-title, .news-release-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.more {
+  margin-left: 2rem;
+}
+
+.notice-container div {
+  margin-bottom: 5rem;
+}
+
+.notice-container div :last-of-type {
+  margin-bottom: 0;
+}
+
+.release-container div {
+  margin-bottom: 5rem;
+}
+
+.notice-item, .release-item {
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.notice-item :nth-child(2), .release-item :nth-child(2) {
+  padding: 1rem;
+}
+
+.notice-item::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  width: 45px;
+  height: 1px;
+  background-color: #c4c4c4;
+}
+
+.notice-item:last-child::after {
+  content: none;
+}
+
+.release-item::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  width: 45px;
+  height: 1px;
+  background-color: #c4c4c4;
+}
+
+.release-item:last-child::after {
+  content: none;
+}
+
+#recruit {
+  background-color: #f7f7f7;
+  margin-bottom: 6rem;
+}
+
+.recruit-text {
+  padding-top: 3rem;
+}
+
+.recruit-text p {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.recruit-text h2 {
+  margin-left: 0;
+}
+
+#sdgs {
+  background-color: #f7f7f7;
+  margin-bottom: 6rem;
+}
+
+.sdgs-title {
+  padding-top: 5rem;
+}
+
+.sdgs-title p {
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.sdgs-title h2 {
+  margin-left: 0;
+}
+
+.sdgs-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.sdgs-item img {
+  width: 160px;
+}
+
+.sdgs-item p {
+  padding-left: 2.8rem;
+}
+
+.button {
+  text-align: center;
+}
+
+button {
+  width: 240px;
+  height: 57px;
+  line-height: 57px;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 6.8rem;
+  background-color: #0d5f80;
+  color: #ffffff;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.609rem;
+  font-weight: 900;
+  line-height: 1.62399;
+  letter-spacing: 0em;
+}
+
+.mgt-20 {
+  margin-top: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
