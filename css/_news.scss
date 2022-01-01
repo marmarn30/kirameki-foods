@@ -1,0 +1,30 @@
+#news {
+  margin-top: 8rem;
+}
+
+.news-container {
+  margin-top: 2rem;
+}
+
+.news-1 {
+  width: 100%;
+  p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.news-2, .news-3, .news-4, .news-5 {
+  display: flex;
+  margin-top: 2rem;
+  img {
+    width: 159px;
+  }
+  p {
+    padding-left: 2.8rem;
+  }
+}
+
+.news-5 {
+  margin-bottom: 8rem;
+}
