@@ -1,0 +1,47 @@
+#sdgs {
+  background-color: $gray;
+  margin-bottom: 6rem;
+}
+
+.sdgs-title {
+  padding-top: 5rem;
+  p {
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  h2 {
+    margin-left: 0;
+  }
+}
+
+.sdgs-item {
+  display: flex;
+  align-items: flex-start;
+  img {
+    width: 160px;
+  }
+  p {
+    padding-left: 2.8rem;
+  }
+}
+
+.button {
+  text-align: center;
+}
+
+button {
+  width: 240px;
+  height: 57px;
+  line-height: 57px;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 6.8rem;
+  background-color: $blue;
+  color: $white;
+  font-family: 'Noto Sans JP', sans-serif;
+  @include f_around(16.09, 26.13, 900, 0);
+}
+
+.mgt-20 {
+  margin-top: 2rem;
+}
