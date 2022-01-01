@@ -1,0 +1,85 @@
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 7rem;
+  background-color: $white;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  left: 1.6rem;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: $black;
+}
+
+.logo {
+  margin: 0 auto;
+}
+
+// SP表示
+.sp-nav {
+  display: none;
+  position: absolute;
+  width: 75%;
+  height: 100vh;
+  background-color: $white;
+  z-index: 200;
+}
+
+.sp-nav-logo {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 7rem;
+  padding-left: 1.6rem;
+  border-bottom: 1px solid $line;
+}
+
+.sp-nav-list li {
+  height: 6rem;
+  line-height: 6rem;
+  padding-left: 1.6rem;
+  font-size: 2rem;
+  color: $black;
+  border-bottom: 1px solid $line;
+  & a {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+.close {
+  position: absolute;
+  right: 2rem;
+  font-size: 3rem;
+  color: $black;
+}
+
+#mask {
+  display: none;
+  transition: all 0.5s;
+}
+
+.open #mask {
+  display: block;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  opacity: 0.8;
+  cursor: pointer;
+}
