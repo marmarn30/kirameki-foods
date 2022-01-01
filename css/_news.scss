@@ -1,9 +1,19 @@
 #news {
   margin-top: 8rem;
+  @media #{$large} {
+    width: 83%;
+    max-width: 1145px;
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
 }
 
 .news-container {
   margin-top: 2rem;
+  @media #{$large} {
+    display: flex;
+    margin-top: 3rem;
+  }
 }
 
 .news-1 {
@@ -11,6 +21,22 @@
   p {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+  @media #{$large} {
+    margin-right: 3rem;
+    p {
+      margin-left: 2rem;
+    }
+    img {
+      width: 572px;
+    }
+  }
+}
+
+
+.sub-news-container {
+  @media #{$large} {
+    display: flex;
   }
 }
 
@@ -23,8 +49,28 @@
   p {
     padding-left: 2.8rem;
   }
+  @media #{$large} {
+    flex-direction: column;
+    margin-top: 0;
+    img {
+      width: 270px;
+    }
+    p {
+      padding: 0.5rem;
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+.news-3, .news-5 {
+  @media #{$large} {
+    margin-left: 3rem;
+  }
 }
 
 .news-5 {
   margin-bottom: 8rem;
+  @media #{$large} {
+    margin-bottom: 0;
+  }
 }
