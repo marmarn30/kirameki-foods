@@ -7,9 +7,17 @@
 .sns-icon {
   display: flex;
   justify-content: space-around;
+  @media #{$large} {
+    width: 50%;
+    margin: 0 auto;
+  }
   img {
     width: 64px;
     height: 64px;
+    @media #{$large} {
+      width: 72px;
+      height: 72px;
+    }
   }
 }
 
@@ -25,6 +33,10 @@
 .contact-item {
   display: flex;
   flex-direction: column;
+  @media #{$large} {
+    flex-direction: row;
+    justify-content: space-between;
+  }
   a {
     margin-bottom: 1rem;
   }
