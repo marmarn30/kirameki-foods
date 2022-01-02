@@ -1,3 +1,13 @@
+#brand {
+  @media #{$large} {
+    width: 83%;
+    max-width: 1145px;
+    margin: 0 auto;
+    margin-top: 10rem;
+  }
+}
+
+// SP表示
 .swiper {
   margin-top: 3rem;
 }
@@ -18,5 +28,27 @@
   }
   img {
     margin-left: 3rem;
+  }
+}
+
+// PC表示
+.brand-container {
+  @media #{$large} {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+  }
+}
+
+.brand-item {
+  @media #{$large} {
+    text-align: center;
+    p {
+      margin-top: 2rem;
+      margin-bottom: 11.5rem;
+      font-family: 'Noto Sans JP', sans-serif;
+      color: $black;
+      @include f_around(24, 27.5, 700, 0);
+    }
   }
 }
