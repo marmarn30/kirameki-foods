@@ -1,4 +1,33 @@
+#company {
+  @media #{$large} {
+    display: flex;
+    justify-content: space-between;
+    width: 83%;
+    max-width: 1145px;
+    margin: 0 auto;
+    padding-bottom: 10rem;
+  }
+}
+
 #company h2 {
   margin-top: 3rem;
   margin-bottom: 7rem;
+  @media #{$large} {
+    margin-bottom: 3rem;
+  }
+}
+
+.company-container {
+  @media #{$large} {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-right: 2.5rem;
+  }
+}
+
+.investor {
+  @media #{$large} {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
