@@ -1,11 +1,14 @@
 // ハンバーガーメニュー
-$('.nav-button').on('click', (e) => {
-  $('.sp-nav').slideToggle();
+// .nav-buttonがクリックされたら.openクラスを付ける
+$('.nav-button').on('click',function() {
+  $('.sp-nav').toggleClass('open');
+  $('#mask').toggleClass('open');
 });
 
-//バツボタンを押したら閉じる
-$('.close').on('click', (e) => {
-  $('.sp-nav').slideToggle();
+//メニュー等がクリックされたら、openクラスを外して非表示にする
+$('.sp-nav-list li, .close, #mask').on('click', function() {
+  $('.sp-nav').removeClass('open');
+  $('#mask').removeClass('open');
 });
 
 // カバー画像をゆっくり表示
