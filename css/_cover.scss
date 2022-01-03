@@ -12,10 +12,11 @@
   background-position: center center;
   background-size: cover;
   @media #{$large} {
-    height: 76.5rem;
-    background-image: url("../img/cover_1_pc.jpg");
-    background-size: cover;
+    height: 76.8rem;
     text-align: left;
+    background-image: url("../img/cover_1_pc.jpg");
+    background-position: center center;
+    background-size: cover;
   }
 }
 
