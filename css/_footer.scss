@@ -2,6 +2,9 @@
   text-align: center;
   margin-top: 6rem;
   margin-bottom: 4rem;
+  @media #{$large} {
+    margin-top: 3rem;
+  }
 }
 
 .sns-icon {
@@ -9,6 +12,7 @@
   justify-content: space-around;
   @media #{$large} {
     width: 50%;
+    min-width: 500px;
     margin: 0 auto;
   }
   img {
