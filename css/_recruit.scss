@@ -16,6 +16,9 @@
 }
 
 .recruit-img {
+  img {
+    width: 100%;
+  }
   @media #{$large} {
     width: 100%;
     max-width: 558px;
@@ -23,6 +26,7 @@
 }
 
 .recruit-text {
+  max-width: none;
   padding-top: 3rem;
   p {
     margin-top: 3rem;
@@ -34,7 +38,7 @@
   @media #{$large} {
     padding-top: 0;
     p {
-      padding-left: 3rem;
+      padding-left: 2rem;
     }
   }
 }
@@ -42,7 +46,7 @@
 .recruit-button {
   text-align: center;
   @media #{$large} {
-    padding-left: 3rem;
+    padding-left: 2rem;
   }
 }
 
