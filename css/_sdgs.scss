@@ -1,6 +1,16 @@
 #sdgs {
   background-color: $gray;
   margin-bottom: 6rem;
+  @media #{$large} {
+    padding-bottom: 6rem;
+  }
+}
+
+.sdgs-container {
+  @media #{$large} {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .sdgs-title {
@@ -8,9 +18,29 @@
   p {
     margin-top: 2.5rem;
     margin-bottom: 3rem;
+    @media #{$large} {
+      margin: 0;
+      padding-top: 2rem;
+      padding-left: 2rem;
+    }
   }
   h2 {
     margin-left: 0;
+  }
+}
+
+.sdgs-wrap {
+  @media #{$large} {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50%;
+    padding-top: 5rem;
+  }
+}
+
+.sdgs-box {
+  @media #{$large} {
+    display: flex;
   }
 }
 
@@ -23,13 +53,30 @@
   p {
     padding-left: 2.8rem;
   }
+  @media #{$large} {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 3rem;
+    img {
+      width: 270px;
+    }
+    p {
+      width: 90%;
+      padding-top: 1rem;
+      padding-left: 0;
+    }
+  }
 }
 
-.button {
+.sdgs-button {
   text-align: center;
+  @media #{$large} {
+    padding-left: 2rem;
+  }
 }
 
-button {
+.sdgs-more-button {
   width: 240px;
   height: 57px;
   line-height: 57px;
@@ -42,6 +89,9 @@ button {
   @include f_around(16.09, 26.13, 900, 0);
 }
 
-.mgt-20 {
+.sp-mgt-20 {
   margin-top: 2rem;
+  @media #{$large} {
+    margin-top: 0;
+  }
 }
