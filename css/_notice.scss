@@ -18,6 +18,7 @@
 }
 
 .notice-container {
+  max-width: none;
   @media #{$large} {
     margin-bottom: 6rem;
   }
@@ -33,6 +34,7 @@
 }
 
 .release-container {
+  max-width: none;
   @media #{$large} {
     margin-bottom: 6rem;
   }
