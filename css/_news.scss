@@ -22,7 +22,11 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
+  img {
+    width: 100%;
+  }
   @media #{$large} {
+    width: 50%;
     margin-right: 3rem;
     p {
       margin-left: 2rem;
@@ -30,6 +34,12 @@
     img {
       width: 572px;
     }
+  }
+}
+
+.sub-news {
+  @media #{$large} {
+    width: 50%;
   }
 }
 
