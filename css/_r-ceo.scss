@@ -1,0 +1,56 @@
+#r-ceo {
+  width: 100%;
+}
+
+.r-ceo-container {
+  position: relative;
+}
+
+.r-ceo-img {
+  height: 37.5rem;
+  object-fit: cover;
+  object-position: 10%;
+}
+
+.r-ceo-textbox {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 110px;
+  left: 15px;
+  h2 {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: $blue2;
+    @include f_around(23.96, 19.97, 900, 0);
+  }
+}
+
+.r-ceo-text1 {
+  margin-top: 2rem;
+  margin-bottom: 1.3rem;
+  & p {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: $blue2;
+  @include f_around(23.96, 19.97, 400, 0);
+  }
+}
+
+.r-ceo-text2 p {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: $blue2;
+  @include f_around(11.98, 18.97, 400, 0);
+}
+
+.r-ceo-button {
+  position: relative;
+  top: 80px;
+  left: 60px;
+  width: 242px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  background-color: $blue2;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: $white;
+  @include f_around(16, 13.6, 400, 0);
+}
