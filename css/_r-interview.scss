@@ -1,0 +1,22 @@
+#r-interview {
+  width: 100%;
+}
+
+.r-interview-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.r-interview-img-box {
+  display: flex;
+}
+
+.r-interview-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+}
