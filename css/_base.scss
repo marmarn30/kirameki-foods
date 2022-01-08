@@ -4,7 +4,9 @@ $white: #ffffff;
 $h1: #ffefef;
 $navy: #032533;
 $blue: #0d5f80;
+$blue2: #1f2774;
 $gray: #f7f7f7;
+$gray2: #c7c7c7;
 $line: #e6e6e6;
 $line2 : #c4c4c4;
 
@@ -29,18 +31,6 @@ $line2 : #c4c4c4;
 // 画面幅
 $small: "(max-width: 767px)";
 $large: "(min-width: 768px)";
-
-// コンテンツエリア
-.container {
-  width: 92%;
-  max-width: 345px;
-  margin: 0 auto;
-  @media #{$large} {
-    width: 83%;
-    max-width: 1145px;
-    margin: 0 auto;
-  }
-}
 
 // レスポンシブ
 .sp-only {
@@ -78,6 +68,18 @@ a {
   }
 }
 
+// index.html
+.container {
+  width: 92%;
+  max-width: 345px;
+  margin: 0 auto;
+  @media #{$large} {
+    width: 83%;
+    max-width: 1145px;
+    margin: 0 auto;
+  }
+}
+
 .section-title {
   margin-left: 1.5rem;
   font-family: 'Noto Sans JP', sans-serif;
@@ -105,6 +107,23 @@ a {
   font-family: 'Noto Sans JP', sans-serif;
   color: $black;
   @include f_around(12.33, 21.59, 400, 0);
+}
+
+// recruitmen.html
+.r-button {
+  position: relative;
+  &::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 0;
+    border-top: solid 3px;
+    border-right: solid 3px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 43%;
+    left: 7%;
+  }
 }
 
 // リセットCSS
