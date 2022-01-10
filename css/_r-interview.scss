@@ -1,0 +1,38 @@
+#r-interview {
+  width: 100%;
+}
+
+.r-interview-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  @media #{$large} {
+    flex-direction: row-reverse;
+    justify-content: start;
+    picture {
+      width: 50%;
+    }
+  }
+}
+
+.r-interview-img {
+  width: 100%;
+  min-height: 25rem;
+  object-fit: cover;
+  @media #{$large} {
+    height: auto;
+  }
+}
+
+.r-interview-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  @media #{$large} {
+    position: static;
+    width: 50%;
+  }
+}
