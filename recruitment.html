@@ -24,44 +24,51 @@
   </head>
   <body>
     <header class="r-header">
-      <div class="r-logo-sp sp-only">
-        <a href="#">
-          <img
-            src="img-2/kirameki_foods_logo_sp.png"
-            alt="きらめきフーズリクルートのロゴ"
+      <div class="r-logo">
+        <picture class="r-logo-item">
+          <source
+            srcset="img-2/kirameki_foods_logo_sp.png"
+            media="(max-width: 767px)"
           />
-          <img
-            src="img-2/kirameki_foods_recruitment_sp.png"
-            alt="きらめきフーズリクルートのロゴ"
-          />
-        </a>
-      </div>
-      <div class="r-logo-pc pc-only">
-        <a href="#">
-          <img
-            src="img-2/kirameki_foods_logo_pc.png"
-            alt="きらめきフーズリクルートのロゴ"
+          <img src="img-2/kirameki_foods_logo_pc.png" alt="サンプル画像" />
+        </picture>
+        <picture class="r-logo-item">
+          <source
+            srcset="img-2/kirameki_foods_recruitment_sp.png"
+            media="(max-width: 767px)"
           />
           <img
             src="img-2/kirameki_foods_recruitment_pc.png"
-            alt="きらめきフーズリクルートのロゴ"
+            alt="サンプル画像"
           />
-        </a>
+        </picture>
       </div>
       <div class="r-header-entry">
-        <button class="r-lg-button">ENTRY</button>
+        <button class="r-header-button">ENTRY</button>
       </div>
       <div class="r-nav-button">
-        <a href="#"><i class="fas fa-bars"></i></a>
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
       </div>
-      <!-- SP表示 -->
-      <!-- <div class="r-sp-nav-close sp-only">
-        <a href="#"><i class="fas fa-times"></i></a>
-      </div> -->
-      <!-- PC表示 -->
-      <!-- <div class="r-pc-nav-close pc-only">
-        <a href="#"><i class="fas fa-times"></i></a>
-      </div> -->
+      <nav class="r-nav">
+        <!-- SPナビゲーション -->
+        <ul class="r-sp-nav-list">
+          <li id="list-item-1"><a href="#">会社案内</a></li>
+          <li id="list-item-2"><a href="#">ブランド</a></li>
+          <li id="list-item-3"><a href="#">SDGs</a></li>
+          <li id="list-item-4"><a href="#">投資家情報</a></li>
+          <li id="list-item-5"><a href="#">ニュースリリース</a></li>
+        </ul>
+        <!-- PCナビゲーション -->
+        <ul class="r-pc-nav-list">
+          <li><a href="#">会社案内</a></li>
+          <li><a href="#">ブランド</a></li>
+          <li><a href="#">SDGs</a></li>
+          <li><a href="#">投資家情報</a></li>
+          <li><a href="#">ニュースリリース</a></li>
+        </ul>
+        <div id="r-nav-mask"></div>
+      </nav>
     </header>
     <main>
       <section id="r-cover">
@@ -82,14 +89,16 @@
       <section id="r-ceo">
         <div class="r-ceo-container">
           <img src="img-2/ceo_sp.jpg" class="r-ceo-img animated" alt="" />
-          <div class="r-ceo-textbox">
+          <div class="r-ceo-wrap">
             <h2 class="r-h2">CEO MESSAGE</h2>
-            <div class="r-ceo-text1">
-              <p>煌木 太郎</p>
-            </div>
-            <div class="r-ceo-text2">
-              <p>株式会社きらめきフーズ</p>
-              <p>代表取締役 CEO</p>
+            <div class="r-ceo-textbox">
+              <div class="r-ceo-text1">
+                <p>煌木 太郎</p>
+              </div>
+              <div class="r-ceo-text2">
+                <p>株式会社きらめきフーズ</p>
+                <p>代表取締役 CEO</p>
+              </div>
             </div>
             <button class="r-ceo-button r-button">メッセージを読む</button>
           </div>
@@ -97,7 +106,18 @@
       </section>
       <section id="r-vision">
         <div class="r-vision-container">
-          <img src="img-2/vision.jpg" class="r-vision-img animated" alt="" />
+          <picture>
+            <source
+              srcset="img-2/vision.jpg"
+              media="(max-width: 767px)"
+              class="r-vision-img animated"
+            />
+            <img
+              src="img-2/vision_bg.jpg"
+              alt="VISION背景画像"
+              class="r-vision-img animated"
+            />
+          </picture>
           <div class="r-vision-wrap">
             <h3 class="r-h3">VISION</h3>
             <div class="r-vision-text">
@@ -123,16 +143,14 @@
       </section>
       <section id="r-interview">
         <div class="r-interview-container">
-          <div class="r-interview-img-wrap animated">
-            <div class="r-interview-img-box">
-              <img src="img-2/interview_1.jpg" alt="" />
-              <img src="img-2/interview_2.jpg" alt="" />
-            </div>
-            <div class="r-interview-img-box">
-              <img src="img-2/interview_3.jpg" alt="" />
-              <img src="img-2/interview_4.jpg" alt="" />
-            </div>
-          </div>
+          <picture>
+            <source
+              srcset="img-2/interview_sp.jpg"
+              media="(max-width: 376px)"
+              class="r-interview-img animated"
+            />
+            <img src="img-2/interview_pc.jpg" class="r-interview-img animated" alt="" />
+          </picture>
           <div class="r-interview-text-box">
             <h4 class="r-h4">INTERVIEW</h4>
             <button class="r-more-button r-button">詳しく見る</button>
@@ -161,20 +179,20 @@
             </div>
           </div>
         </div>
-        <div class="brand-container pc-only">
-          <div class="brand-item">
+        <div class="r-brand-container pc-only">
+          <div class="r-brand-item">
             <img src="img/brand_1.jpg" alt="ブランドA" />
             <p>ブランドA</p>
           </div>
-          <div class="brand-item">
+          <div class="r-brand-item">
             <img src="img/brand_2.jpg" alt="ブランドB" />
             <p>ブランドB</p>
           </div>
-          <div class="brand-item">
+          <div class="r-brand-item">
             <img src="img/brand_3.jpg" alt="ブランドC" />
             <p>ブランドC</p>
           </div>
-          <div class="brand-item">
+          <div class="r-brand-item">
             <img src="img/brand_4.jpg" alt="ブランドD" />
             <p>ブランドD</p>
           </div>
@@ -182,19 +200,19 @@
       </section>
     </main>
     <footer class="r-footer">
-      <div class="recruit-text-1">
+      <div class="r-footer-text-1">
         <p>キラメキフーズで一緒に働きませんか？</p>
         <button class="r-button">ENTRY</button>
       </div>
-      <div class="recruit-text-2">
+      <div class="r-footer-text-2">
         <p>ご不明な点は、お気軽にお問い合わせください</p>
         <button class="r-sm-button">お問い合わせ</button>
       </div>
-      <div class="contact">
-        <div class="contact-text">
+      <div class="r-contact">
+        <div class="r-contact-text">
           <p class="lg-text">お問い合わせ</p>
         </div>
-        <div class="contact-item">
+        <div class="r-contact-item">
           <a href="#" class="lg-text">利用規約</a>
           <a href="#" class="lg-text">個人情報について</a>
           <a href="#" class="lg-text">Cookieの設定</a>
@@ -202,8 +220,8 @@
           <a href="#" class="lg-text">サイトマップ</a>
         </div>
       </div>
-      <div class="copy-right">
-        <small class="copy-text"
+      <div class="r-copy-right">
+        <small class="r-copy-text"
           >&copy; 2004-2021 Kirameki Foods Company, Limited All Rights
           Reserved.</small
         >
