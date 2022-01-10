@@ -109,7 +109,7 @@ a {
   @include f_around(12.33, 21.59, 400, 0);
 }
 
-// recruitmen.html
+// recruitment.html
 .r-button {
   position: relative;
   &::before {
@@ -123,6 +123,10 @@ a {
     position: absolute;
     top: 43%;
     left: 7%;
+    @media #{$large} {
+      width: 15px;
+      height: 15px;
+    }
   }
 }
 
