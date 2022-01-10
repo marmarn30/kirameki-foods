@@ -1,11 +1,49 @@
 #r-brand {
   padding-top: 6rem;
   background-color: #f4f4f4;
+  @media #{$large} {
+    padding-top: 10rem;
+  }
+}
+.r-brand-bg-color {
+  background-color: #f4f4f4;
 }
 
 .r-h5 {
   text-align: center;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   color: $blue2;
   @include f_around(36, 27.5, 900, 0);
+  @media #{$large} {
+    margin-bottom: 3.4rem;
+    @include f_around(48.04, 27.52, 900, 0);
+  }
+}
+
+// PC表示
+.r-brand-container {
+  @media #{$large} {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    margin: 0 auto;
+    max-width: 1145px;
+  }
+}
+
+.r-brand-item {
+  @media #{$large} {
+    text-align: center;
+    margin-right: 3rem;
+    &:first-child {
+      margin-left: 3rem;
+    }
+    p {
+      margin-top: 2rem;
+      margin-bottom: 11.5rem;
+      font-family: 'Noto Sans JP', sans-serif;
+      color: $black;
+      @include f_around(24, 27.5, 700, 0);
+    }
+  }
 }
