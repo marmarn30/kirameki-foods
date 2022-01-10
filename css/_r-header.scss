@@ -2,23 +2,34 @@
   display: flex;
   position: fixed;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   width: 100%;
   height: 6rem;
   background-color: $white;
+  justify-content: flex-end;
 }
 
-.r-logo-sp {
+.r-logo {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  width: 44%;
+  align-items: baseline;
+  width: 40%;
+  @media screen and (min-width: 500px) {
+    flex-direction: row;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 1rem;
+  }
+  @media #{$large} {
+    width: auto;
+    margin-left: 3rem;
+    margin-right: auto;
+  }
 }
 
-.r-logo-sp a img {
-  display: block;
-  margin: 5px;
+.r-logo-item {
+  margin: 3px;
 }
 
 .r-header-entry {
@@ -34,7 +45,7 @@
   }
 }
 
-.r-lg-button {
+.r-header-button {
   padding-left: 2rem;
   &::before {
     content: "";
@@ -57,13 +68,112 @@
   font-size: 4.2rem;
   color: $blue2;
   background-color: $white;
+  cursor: pointer;
 }
 
-.nav-close {
-  width: 6rem;
-  line-height: 6rem;
-  text-align: center;
-  font-size: 4.2rem;
-  color: $blue2;
-  background-color: $white;
+.fas.fa-times {
+  display: none;
+}
+
+.r-nav {
+  display: none;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  width: 100%;
+  z-index: 500;
+}
+
+// SPナビゲーション
+.r-sp-nav-list {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  width: 100%;
+  height: auto;
+  padding: 5.5rem 1.5rem 7rem;
+  background-color: $gray2;
+  z-index: 400;
+  @media #{$large} {
+    display: none;
+  }
+  li {
+    padding: 3rem;
+    text-align: center;
+    z-index: 600;
+    background-color: $blue2;
+    font-family: "Noto Sans JP", sans-serif;
+    color: $white;
+    @include f_around(20, 27.2, 400, 0);
+  }
+}
+
+#list-item-1 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+#list-item-2 {
+  grid-row: 1 / 2;
+  grid-column: 2/ 3;
+}
+
+#list-item-3 {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+#list-item-4 {
+  grid-row: 2 / 3 ;
+  grid-column: 2 / 3;
+}
+
+#list-item-5 {
+  grid-row: 3 / 3;
+  grid-column: 1 / 3;
+}
+
+// PCナビゲーション
+.r-pc-nav-list {
+  display: none;
+  @media #{$large} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+    min-height: 37.5rem;
+    padding: 5.5rem;
+    background-color: $gray2;
+    z-index: 300;
+  }
+  li {
+    @media #{$large} {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 362px;
+      height: 98px;
+      margin: 0.5rem;
+      margin-left: 3rem;
+      background-color: $blue2;
+      cursor: pointer;
+      font-family: "Noto Sans JP", sans-serif;
+      color: $white;
+      @include f_around(20, 27.2, 400, 0);
+    }
+  }
+}
+
+#r-nav-mask {
+  width: 100%;
+  height: 100vh;
+  z-index: 200;
+  background-color: rgba(255, 255, 255, 0.52);
+  @media #{$large} {
+    height: 70.8rem;
+    cursor: pointer;
+  }
 }
