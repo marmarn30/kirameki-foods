@@ -4,7 +4,7 @@
 // フォントの読み込み
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
 
-// Scssファイルの読み込み
+// index.htmlのScssファイル
 @import "base";
 @import "brand";
 @import "company";
@@ -16,7 +16,7 @@
 @import "recruit";
 @import "sdgs";
 
-// recruitmentのScssファイル
+// recruitment.htmlのScssファイル
 @import "r-brand";
 @import "r-ceo";
 @import "r-cover";
@@ -25,3 +25,8 @@
 @import "r-interview";
 @import "r-office";
 @import "r-vision";
+
+// ecarchive.htmlのScssファイル
+@import "e-header";
+@import "e-main";
+@import "e-side";
