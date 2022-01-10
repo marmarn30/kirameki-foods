@@ -1,5 +1,8 @@
 #r-vision {
   height: 50rem;
+  @media #{$large} {
+    height: 77rem;
+  }
 }
 
 .r-vision-container {
@@ -11,14 +14,23 @@
     padding-top: 5rem;
     padding-bottom: 5rem;
     color: $white;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
     @include f_around(36, 20, 900, 0);
+    @media #{$large} {
+      padding: 0;
+      margin: 10rem auto;
+      @include f_around(48, 20, 900, 0);
+    }
   }
 }
 
 .r-vision-img {
+  width: 100%;
   height: 50rem;
   object-fit: cover;
+  @media #{$large} {
+    height: 77rem;
+  }
 }
 
 .r-vision-wrap {
@@ -29,15 +41,23 @@
 .r-vision-text {
   margin-bottom: 5rem;
   & p {
-  color: $white;
-  font-family: 'Noto Sans JP', sans-serif;
-  @include f_around(22, 41, 400, 0);
+    color: $white;
+    font-family: "Noto Sans JP", sans-serif;
+    @include f_around(22, 41, 400, 0);
+    @media #{large} {
+      @include f_around(24, 41, 400, 0);
+    }
   }
 }
 
 .r-vision-button {
   display: flex;
   flex-direction: column;
+  @media #{$large} {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10rem;
+  }
 }
 
 .r-vision-button-item {
@@ -46,8 +66,18 @@
   line-height: 45px;
   margin: 0 auto 2rem;
   border: solid 3px $white;
-  background-color: rgba(199, 199, 199, .5);
+  background-color: rgba(199, 199, 199, 0.5);
   color: $white;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   @include f_around(16.14, false, 400, 0);
+  @media #{$large} {
+    width: 361px;
+    height: 68px;
+    line-height: 68px;
+    margin: 0;
+    @include f_around(24, false, 400, 0);
+    &:first-child {
+      margin-right: 3.2rem;
+    }
+  }
 }
