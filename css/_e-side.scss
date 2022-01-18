@@ -1,0 +1,41 @@
+#e-side {
+  @media #{$large} {
+    width: 22%;
+    margin: 0 auto;
+  }
+  @media #{$middle} {
+    width: 27%;
+    margin: 0 auto;
+  }
+}
+
+.e-pc-nav {
+  @media #{$large} {
+    width: 90%;
+    position: relative;
+    @media #{$middle} {
+      width: 100%;
+    }
+    &.slide {
+      position: absolute;
+      display: block;
+      visibility: visible;
+    }
+  }
+}
+
+.e-pc-banner {
+  display: none;
+  @media #{$large} {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+  img {
+    @media #{$large} {
+      width: 263px;
+      margin-bottom: 3.3rem;
+    }
+  }
+}
