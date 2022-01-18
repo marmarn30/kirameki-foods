@@ -7,8 +7,10 @@ $blue: #0d5f80;
 $blue2: #1f2774;
 $gray: #f7f7f7;
 $gray2: #c7c7c7;
+$gray3: #dedede;
 $line: #e6e6e6;
-$line2 : #c4c4c4;
+$line2: #c4c4c4;
+$red: #7F0019;
 
 // フォント一括指定
 // ＠include f_around(フォントサイズ, 行送り , 太さ, トラッキング)
@@ -129,6 +131,58 @@ a {
     }
   }
 }
+
+// ecarchive.html
+$middle: "(min-width: 768px) and (max-width: 1283px)";
+
+.e-container {
+  width: 92%;
+  max-width: 345px;
+  margin: 0 auto;
+  @media #{$large} {
+    width: 82%;
+    max-width: 1130px;
+    margin: 0 auto;
+  }
+}
+
+.lg-icon {
+  font-size: 3rem;
+  color: $black;
+}
+
+.sm-icon {
+  font-size: 2.1rem;
+  color: $black;
+}
+
+.e-lg-text {
+  margin-top: .5rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: $black;
+  @include f_around(23.96, 27.46, 900, 0);
+}
+.e-md-text {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: $black;
+  @include f_around(17.97, 20.44, 400, 0);
+}
+
+.e-sm-text {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: $black;
+  @include f_around(15.98, 23.81, 400, 0);
+}
+
+.e-pc-text {
+  @media #{$large} {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: $black;
+    @include f_around(24, 23.89, 400, 0);
+  }
+}
+
+
 
 // リセットCSS
 /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
