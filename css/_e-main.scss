@@ -1,0 +1,306 @@
+.e-bread {
+  padding-top: 2.5rem;
+  @media #{$middle} {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+.e-bread-list {
+  display: flex;
+  margin-bottom: 3.5rem;
+  li a {
+    padding-right: 1rem;
+    font-family: "Noto Sans JP", sans-serif;
+    color: $black;
+    @include f_around(12, 24, 400, 0);
+    @media #{$large} {
+      @include f_around(16, 24, 400, 0);
+    }
+  }
+}
+
+.e-bread-list li:first-child::after {
+  content: ">";
+  margin-right: 1rem;
+  font-family: "Noto Sans JP", sans-serif;
+  color: $black;
+  @include f_around(12, 24, 400, 0);
+  @media #{$large} {
+    @include f_around(16, 24, 400, 0);
+  }
+}
+
+#e-container {
+  display: flex;
+  @media #{$large} {
+    flex-direction: row-reverse;
+  }
+  @media #{$middle} {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+.e-container-pc-only {
+  @media #{$large} {
+    width: 82%;
+    max-width: 1130px;
+    margin: 0 auto;
+  }
+}
+
+#e-main {
+  @media #{$large} {
+    width: 75%;
+    max-width: 850px;
+  }
+  @media #{$middle} {
+    width: 70%;
+  }
+}
+
+.e-title {
+  margin-bottom: 2rem;
+  @media #{$large} {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.e-title-text-1 {
+  margin-bottom: 0.5rem;
+  font-family: "Noto Sans JP", sans-serif;
+  color: $blue2;
+  @include f_around(32, 27.5, 900, 0);
+  @media #{$large} {
+    @include f_around(48, 27.5, 900, 0);
+  }
+}
+
+.e-title-text-2 {
+  font-family: "Noto Sans JP", sans-serif;
+  color: $black;
+  @include f_around(15.98, 23.81, 400, 0);
+  @media #{$large} {
+    margin-left: 1rem;
+    @include f_around(24, 27.5, 400, 0);
+  }
+}
+
+.e-search-text-1 {
+  display: flex;
+  margin-bottom: 1.5rem;
+  @media #{$large} {
+    margin: 6rem 0 3rem 0;
+  }
+  p {
+    margin-right: 2rem;
+  }
+}
+
+.e-search-wrap {
+  margin-bottom: 6rem;
+  @media #{$large} {
+    display: flex;
+    padding: 1rem 0;
+    width: 80%;
+    min-width: 500px;
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+  }
+  @media #{$middle} {
+    width: 100%;
+  }
+}
+
+.e-search-text-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0;
+  position: relative;
+  @media #{$large} {
+    align-items: center;
+    margin: 0;
+    padding-right: 20px;
+    border-right: 1px solid $black;
+  }
+  p {
+    margin-left: 0.7rem;
+    min-width: 100px;
+  }
+}
+
+.e-search-item-container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  @media #{$large} {
+    flex-wrap: nowrap;
+    margin-left: 2rem;
+    margin-bottom: 0;
+  }
+}
+
+.e-search-item-container-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1.5rem;
+  @media #{$large} {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: auto;
+    margin-top: 0;
+    min-width: 180px;
+  }
+}
+
+.e-search-item {
+  display: flex;
+  align-items: center;
+  @media #{$large} {
+    align-items: center;
+  }
+  label {
+    @media #{$middle} {
+      min-width: 40px;
+    }
+  }
+  select {
+    margin: 0 1.5rem;
+  }
+}
+
+#display {
+  display: inline-block;
+  width: 10rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: solid 1px $gray2;
+  border-radius: 5px;
+  font-family: "Noto Sans JP", sans-serif;
+  color: $black;
+  @include f_around(16, false, 400, 0);
+}
+
+#stock,
+#number {
+  display: inline-block;
+  width: 8.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: solid 1px $gray2;
+  border-radius: 5px;
+  font-family: "Noto Sans JP", sans-serif;
+  color: $black;
+  @include f_around(16, false, 400, 0);
+}
+
+.e-pull-down {
+  position: relative;
+  &::after {
+    content: "\f078";
+    position: absolute;
+    top: 0.5rem;
+    right: 2.7rem;
+    font-family: "Font Awesome 5 Free";
+    color: $black;
+    @include f_around(18, false, 900, 0);
+    pointer-events: none;
+  }
+}
+
+.e-product-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-width: 300px;
+  max-width: 850px;
+}
+
+.e-product-item {
+  margin-bottom: 3.3rem;
+  @media #{$large} {
+    margin-bottom: 5rem;
+  }
+  img {
+    width: 160px;
+    margin-bottom: 1.5rem;
+    @media #{$large} {
+      width: 195px;
+    }
+  }
+}
+
+.sale {
+  position: relative;
+  p {
+    position: absolute;
+    top: -1rem;
+    width: 6.8rem;
+    height: 2.8rem;
+    text-align: center;
+    background-color: $red;
+    font-family: "Noto Sans JP", sans-serif;
+    color: $white;
+    @include f_around(17.98, 23.96, 900, 0);
+  }
+}
+
+.base-line span {
+  vertical-align: bottom;
+}
+
+.e-next {
+  text-align: center;
+  margin: 4rem auto 6rem;
+  @media #{$large} {
+    margin: 0 0 5rem 0;
+  }
+  a {
+    display: inline-block;
+    margin: 1.8rem 1.5rem;
+    font-family: "Noto Sans JP", sans-serif;
+    color: $black;
+    @include f_around(23.89, 23.73, 700, 0);
+  }
+}
+
+.red-text {
+  font-family: "Noto Sans JP", sans-serif;
+  color: $red;
+  @include f_around(23.96, 27.46, 900, 0);
+}
+
+.e-next .red-text {
+  font-family: "Noto Sans JP", sans-serif;
+  color: $red;
+  @include f_around(23.89, 23.73, 700, 0);
+}
+
+.three {
+  position: relative;
+  &::after {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    top: 0;
+    left: 10rem;
+    @media #{$large} {
+      left: 34rem;
+    }
+    @media #{$middle} {
+      left: 18rem;
+    }
+  }
+}
+
+.e-sp-banner {
+  display: flex;
+  justify-content: space-between;
+  @media #{$large} {
+    display: none;
+  }
+}
