@@ -44,14 +44,14 @@ new Swiper('.swiper', {
 
 // recruitment.html
 //ハンバーガーメニュー
-$('.fa-bars').on('click',function() {
+$('.r-hbg-open').on('click',function() {
   $('.r-nav').slideToggle();
-  $('.fa-bars').hide();
-  $('.fa-times').show();
+  $('.r-hbg-open').hide();
+  $('.r-hbg-close').show();
 });
 
-$('.fa-times, .r-sp-nav-list, .r-pc-nav-list, #r-nav-mask').on('click', function () {
+$('.r-hbg-close, .r-sp-nav-list, .r-pc-nav-list, #r-nav-mask').on('click', function () {
   $('.r-nav').slideToggle();
-  $('.fa-times').hide();
-  $('.fa-bars').show();
+  $('.r-hbg-close').hide();
+  $('.r-hbg-open').show();
 });
