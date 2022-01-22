@@ -288,6 +288,12 @@ input[type="range"] {
   }
 }
 
+.e-online-logo {
+  @media #{$large} {
+    margin-left: 2rem;
+  }
+}
+
 .e-pc-search {
   @media #{$large} {
   }
@@ -344,5 +350,3 @@ input[type="range"] {
     justify-content: space-evenly;
   }
 }
-
-// スライドバー以外OK
