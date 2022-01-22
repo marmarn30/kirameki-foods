@@ -137,7 +137,6 @@
   flex-wrap: wrap;
   margin-bottom: 2rem;
   @media #{$large} {
-    flex-wrap: nowrap;
     margin-left: 2rem;
     margin-bottom: 0;
   }
@@ -150,7 +149,6 @@
   margin-top: 1.5rem;
   @media #{$large} {
     flex-direction: row-reverse;
-    flex-wrap: wrap;
     width: auto;
     margin-top: 0;
     min-width: 180px;
